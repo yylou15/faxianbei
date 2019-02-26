@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Myheader></Myheader>
-    <!--<router-view/>-->
+    <router-view/>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
   }
 #app {
   margin: 0;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: 'AvenirTripVideo', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

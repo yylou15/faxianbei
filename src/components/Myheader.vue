@@ -1,10 +1,32 @@
 <template>
-    <el-row class="head grid-content bg-purple-dark">
-        <el-col :span="4" style="background-color: red">
-            <img src="https://avatars0.githubusercontent.com/u/32712286?s=460&v=4" alt="LEO" style="width: 100%;height: 70px">
+    <el-row class="head grid-content" style="border-bottom: solid 1px #e6e6e6;">
+        <el-col :span="2">
+            <img src="/static/img/logo.png" alt="LEO" style="width: 50%;">
         </el-col>
-        <el-col :span="3">
-
+        <el-col :span="10">
+            <el-menu :default-active="activeIndex" router class="el-menu-demo menu" mode="horizontal">
+                <el-menu-item v-for="(item,i) in headMenu" :key="i" :index="item.route" style="width: 25%">
+                    {{item.caption}}
+                </el-menu-item>
+            </el-menu>
+        </el-col>
+        <el-col :span="4" style="padding: auto;line-height: 60px">
+            <i class="el-icon-info"></i>
+            &nbsp;&nbsp;<a href="#">登录</a>&nbsp;&nbsp;/&nbsp;&nbsp;<a href="#">注册</a>
+        </el-col>
+        <el-col :span="5" style="padding: 10px;">
+            <el-input
+                    class="bg-purple-dark"
+                    placeholder="请输入内容"
+                    prefix-icon="el-icon-search"
+                    v-model="searchKey">
+            </el-input>
+        </el-col>
+        <el-col :span="1" style="padding: 20px;">
+            <i class="el-icon-message menu-icon"></i>
+        </el-col>
+        <el-col :span="1" style="padding: 20px;">
+            <i class="el-icon-bell menu-icon"></i>
         </el-col>
     </el-row>
 </template>
@@ -14,17 +36,48 @@ export default {
   name: 'MyComponent',
   data () {
     return {
-      msg: '1214'
+      activeIndex: '1',
+      headMenu: [
+        {
+          caption: '旅行视频',
+          index: '1',
+          route: '/TripVideo'
+        },
+        {
+          caption: '旅行故事',
+          index: '2',
+          route: '/TripStory'
+        },
+        {
+          caption: '来一场旅行',
+          index: '3',
+          route: '/GetOneTrip'
+        },
+        {
+          caption: '旅行同行',
+          index: '4',
+          route: '/TripColleague'
+        }
+      ],
+      searchKey: ''
+    }
+  },
+  methods: {
+    handleSelect (ent) {
+
     }
   }
+
 }
 </script>
 
 <style scoped>
 .head{
     width: 100%;
-    height: 100px;
-    padding: 15px;
+    /*padding: 15px;*/
+}
+.menu-icon{
+    cursor: pointer;
 }
 .el-row {
     margin-bottom: 20px;
@@ -51,5 +104,7 @@ export default {
 .row-bg {
     padding: 10px 0;
     background-color: #f9fafc;
+}
+menu{
 }
 </style>
