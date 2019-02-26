@@ -1,7 +1,7 @@
 <template>
     <el-row class="head grid-content" style="border-bottom: solid 1px #e6e6e6;">
         <el-col :span="2">
-            <img src="/static/img/logo.png" alt="LEO" style="width: 50%;">
+            <a href="/"><img src="/static/img/logo.png" alt="LEO" style="width: 50%;" class="menu-logo"></a>
         </el-col>
         <el-col :span="10">
             <el-menu :default-active="activeIndex" router class="el-menu-demo menu" mode="horizontal">
@@ -36,7 +36,7 @@ export default {
   name: 'MyComponent',
   data () {
     return {
-      activeIndex: '1',
+      activeIndex: '2',
       headMenu: [
         {
           caption: '旅行视频',
@@ -75,6 +75,9 @@ export default {
 .head{
     width: 100%;
     /*padding: 15px;*/
+}
+.menu-logo{
+    cursor: pointer;
 }
 .menu-icon{
     cursor: pointer;

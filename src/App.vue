@@ -25,4 +25,21 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+
+  a{
+    text-decoration: none;
+    font-family: "Microsoft YaHei",serif;
+  }
+  a:link{
+    color: #30a3f5;
+  }
+  a:visited{
+    color: #30a3f5;
+  }
+  a:hover{
+    color: #4b72ff;
+  }
+  a:active{
+    color: #4b72ff;
+  }
 </style>
