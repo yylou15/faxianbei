@@ -36,26 +36,22 @@ export default {
   name: 'MyComponent',
   data () {
     return {
-      activeIndex: '2',
+      activeIndex: this.$route.path,
       headMenu: [
         {
           caption: '旅行视频',
-          index: '1',
           route: '/TripVideo'
         },
         {
           caption: '旅行故事',
-          index: '2',
           route: '/TripStory'
         },
         {
           caption: '来一场旅行',
-          index: '3',
           route: '/GetOneTrip'
         },
         {
           caption: '旅行同行',
-          index: '4',
           route: '/TripColleague'
         }
       ],

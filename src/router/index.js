@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import TripVideo from '@/components/TripVideo/TripVideo'
+import TripVideo from '@/components/TripVideo/index'
+import latestTripVideo from '@/components/TripVideo/latest'
+import hotTripVideo from '@/components/TripVideo/hot'
 import TripStory from '@/components/TripStory/TripStory'
 import GetOneTrip from '@/components/GetOneTrip/GetOneTrip'
 import TripColleague from '@/components/TripColleague/TripColleague'
@@ -11,7 +13,16 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/TripVideo', name: 'TripVideo', component: TripVideo
+      path: '/TripVideo',
+      component: TripVideo,
+      redirect: '/TripVideo/latest',
+      children: [
+        {
+          path: 'latest', name: 'latestTripVideo', component: latestTripVideo
+        }, {
+          path: 'hot', name: 'hotTripVideo', component: hotTripVideo
+        }
+      ]
     }, {
       path: '/TripStory', name: 'TripStory', component: TripStory
     }, {

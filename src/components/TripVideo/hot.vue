@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  name: 'TripVideo',
+  name: 'hotTripVideo',
   data () {
     return {
-      msg: 'Video'
+      msg: 'Hot Video'
     }
   }
 }
