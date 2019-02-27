@@ -62,7 +62,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -71,7 +71,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -80,7 +80,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -89,7 +89,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -98,7 +98,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -107,7 +107,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -116,7 +116,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -125,7 +125,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -134,7 +134,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -143,7 +143,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -152,7 +152,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -161,7 +161,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -170,7 +170,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -179,7 +179,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         },
@@ -188,88 +188,7 @@ export default {
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
-          articleId: 10086,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://avatars0.githubusercontent.com/u/32712286?s=460&v=4',
+          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           articleId: 10086,
           type: 'hot'
         }

@@ -16,7 +16,7 @@
 
         <!--@size-change="handleSizeChange"-->
         <!--@current-change="handleCurrentChange"-->
-        <el-row style="background-color: white;margin-top: 30px">
+        <el-row style="background-color: white;margin-top: 30px;padding: 10px">
             <el-col :span="24">
                 <el-pagination
                         :current-page.sync="currentPage1"
