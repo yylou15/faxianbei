@@ -1,0 +1,95 @@
+<template>
+    <div >
+        <el-container class="wrapper" v-for="(item,index) in list" :key="index" v-if="index >= (currentPage1-1) * 5 && index < (currentPage1 * 5)">
+            <el-aside width="373px" style="overflow: hidden;">
+                <img :src="item.postUrl" alt="封面图片" class="post" @click="handleAsideClick(item.articleId)">
+            </el-aside>
+            <el-main class="main">
+                <span class="caption" @click="handleAsideClick(item.articleId)">{{item.caption}}{{index}}</span>
+                <p class="digest" @click="handleAsideClick(item.articleId)">{{item.digest}}</p>
+                <div class="origin">
+                    <img :src="item.originAvatar" alt="来源" class="originImg">
+                    &nbsp;&nbsp;<span class="originText">新片场</span>
+                </div>
+            </el-main>
+        </el-container>
+
+        <!--@size-change="handleSizeChange"-->
+        <!--@current-change="handleCurrentChange"-->
+        <el-row style="background-color: white;margin-top: 30px">
+            <el-col :span="24">
+                <el-pagination
+                        :current-page.sync="currentPage1"
+                        :page-size="5"
+                        layout="total, prev, pager, next"
+                        :total="list.length">
+                </el-pagination>
+            </el-col>
+        </el-row>
+    </div>
+</template>
+
+<script>
+export default {
+  name: 'article-item',
+  props: ['list'],
+  data () {
+    return {
+      //    分页
+      currentPage1: '1'
+    }
+  },
+  methods: {
+    handleAsideClick (id) {
+      return 10086
+    }
+  }
+}
+</script>
+
+<style scoped>
+.wrapper{
+    height: 247px;
+    width: 1000px;
+    margin-top: 50px;
+    text-align: left;
+}
+.post{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    /*padding: 5px;*/
+    background-color: white;
+    position: relative;
+}
+
+.caption {
+    font-weight: bold;font-size: 1.2em;
+}
+
+.digest {
+    color: #ccc;
+}
+
+.origin {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.originImg {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    float: left;
+}
+
+.originText {
+    color: #aaa;
+}
+.post,.caption,.origin,.digest{
+    cursor: pointer;
+}
+</style>

@@ -1,7 +1,7 @@
 <template>
-    <el-row class="head grid-content" style="border-bottom: solid 1px #e6e6e6;">
-        <el-col :span="2">
-            <a href="/"><img src="/static/img/logo.png" alt="LEO" style="width: 50%;" class="menu-logo"></a>
+    <el-row class="head grid-content" style="border-bottom: solid 1px #e6e6e6;min-width: 1000px;background-color: white">
+        <el-col :span="3">
+            <a href="/" style="display:block;margin-top: 4px"><img src="/static/img/new_logo.png" alt="LEO" style="width: 50px;" class="menu-logo"></a>
         </el-col>
         <el-col :span="10">
             <el-menu :default-active="activeIndex" router class="el-menu-demo menu" mode="horizontal">
@@ -62,6 +62,9 @@ export default {
       searchKey: ''
     }
   },
+  created: () => {
+    console.log(this.$route)
+  },
   methods: {
     handleSelect (ent) {
 
@@ -81,9 +84,6 @@ export default {
 }
 .menu-icon{
     cursor: pointer;
-}
-.el-row {
-    margin-bottom: 20px;
 }
 .el-row:last-child {
      margin-bottom: 0;
