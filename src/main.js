@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
+import VueRouter from 'vue-router'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
@@ -22,6 +23,7 @@ Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
+Vue.use(VueRouter)
 
 /* eslint-disable no-new */
 new Vue({

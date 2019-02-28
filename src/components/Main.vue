@@ -1,22 +1,9 @@
 <template>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">
-                <img src="/static/img/bg.jpg" alt="背景">
-            </div>
-            <div class="swiper-slide">
-                <img src="/static/img/bg.jpg" alt="背景">
-            </div>
-            <div class="swiper-slide">
-                <img src="/static/img/bg.jpg" alt="背景">
-            </div>
-        </div>
-
-        <!-- 如果需要导航按钮 -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-    </div>
+    <el-carousel trigger="click" height="100vh">
+        <el-carousel-item v-for="item in 3" :key="item">
+            <img src="/static/img/bg.jpg" alt="">
+        </el-carousel-item>
+    </el-carousel>
 </template>
 
 <script>
@@ -41,14 +28,7 @@ export default {
 </script>
 
 <style scoped>
-    .swiper-container {
-        width: 100%;
-    }
-    .swiper-slide{
-        width: 100%;
-    }
     img{
         width: 100%;
-        height: 100%;
     }
 </style>
