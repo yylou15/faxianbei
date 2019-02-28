@@ -36,7 +36,7 @@ export default {
   name: 'MyComponent',
   data () {
     return {
-      activeIndex: this.$route.path,
+      activeIndex: this.$route.path.match(/\/.+?(?=\/)/) ? this.$route.path.match(/\/.+?(?=\/)/)[0] : '',
       headMenu: [
         {
           caption: '旅行视频',
@@ -59,7 +59,9 @@ export default {
     }
   },
   created: () => {
-    console.log(this.$route)
+  },
+  mounted: function () {
+    // console.log(this.$route)
   },
   methods: {
     handleSelect (ent) {

@@ -5,23 +5,22 @@
                 <img class="carousel-img" v-if="item.img" :src="item.img" alt="">
             </el-carousel-item>
         </el-carousel>
-        <el-col :span="20" :offset="2">
-            <el-tabs v-model="activeName">
-                <el-tab-pane label="最新推荐" name="latest">
-                    <h1>Latest Video</h1>
-                </el-tab-pane>
-
-                <el-tab-pane label="热门排行" name="hot">
-                    <h1>Hot Video</h1>
-                </el-tab-pane>
-            </el-tabs>
-        </el-col>
+        <el-row style="line-height: 40px;background-color: white">
+            <el-col :span="18" :offset="3">
+                <el-menu :default-active="activeSubIndex" router class="el-menu-demo menu" mode="horizontal">
+                    <el-menu-item v-for="(item,i) in subIndexMenu" :key="i" :index="item.route">
+                        {{item.caption}}
+                    </el-menu-item>
+                </el-menu>
+            </el-col>
+        </el-row>
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'TripVideo',
+  name: 'index',
   data () {
     return {
       msg: 'Video',
@@ -34,7 +33,17 @@ export default {
           img: 'http://54sh.csu.edu.cn/media/%E6%96%B0%E5%B9%B4%E9%9F%B3%E4%B9%90%E4%BC%9A.jpg'
         }
       ],
-      activeName: 'latest'
+      activeSubIndex: this.$route.path,
+      subIndexMenu: [
+        {
+          caption: '最新推荐',
+          route: '/TripVideo/latest'
+        },
+        {
+          caption: '热门排行',
+          route: '/TripVideo/hot'
+        }
+      ]
     }
   }
 }
