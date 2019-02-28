@@ -63,7 +63,9 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          //  文章id
+          articleId: 1,
+          //  类型：精选or热门
           type: 'hot'
         },
         {
@@ -72,7 +74,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 2,
           type: 'hot'
         },
         {
@@ -81,7 +83,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 3,
           type: 'hot'
         },
         {
@@ -90,7 +92,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 4,
           type: 'hot'
         },
         {
@@ -99,7 +101,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 5,
           type: 'hot'
         },
         {
@@ -108,7 +110,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 6,
           type: 'hot'
         },
         {
@@ -117,7 +119,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 7,
           type: 'hot'
         },
         {
@@ -126,7 +128,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 8,
           type: 'hot'
         },
         {
@@ -135,7 +137,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 9,
           type: 'hot'
         },
         {
@@ -144,7 +146,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 10,
           type: 'hot'
         },
         {
@@ -153,7 +155,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 11,
           type: 'hot'
         },
         {
@@ -162,7 +164,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 12,
           type: 'hot'
         },
         {
@@ -171,7 +173,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 13,
           type: 'hot'
         },
         {
@@ -180,7 +182,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 14,
           type: 'hot'
         },
         {
@@ -189,7 +191,7 @@ export default {
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 10086,
+          articleId: 15,
           type: 'hot'
         }
       ]

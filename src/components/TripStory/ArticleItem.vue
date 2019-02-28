@@ -31,17 +31,19 @@
 
 <script>
 export default {
-  name: 'article-item',
+  name: 'ArticleItem',
   props: ['list'],
   data () {
     return {
       //    分页
-      currentPage1: '1'
+      currentPage1: 1
     }
   },
   methods: {
     handleAsideClick (id) {
-      return 10086
+      console.log(id)
+      this.$router.push('/TripStory/details/' + id)
+      console.log(this.$route)
     }
   }
 }

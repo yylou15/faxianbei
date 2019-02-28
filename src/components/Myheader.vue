@@ -58,9 +58,9 @@ export default {
       searchKey: ''
     }
   },
-  created: () => {
-    console.log(this.$route)
-  },
+  // created: () => {
+  //   console.log(this.$route)
+  // },
   methods: {
     handleSelect (ent) {
 
@@ -74,6 +74,8 @@ export default {
 .head{
     width: 100%;
     /*padding: 15px;*/
+    position: fixed;
+    z-index: 999;
 }
 .menu-logo{
     cursor: pointer;

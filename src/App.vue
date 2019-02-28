@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Myheader></Myheader>
-    <div style="padding: 50px">
+    <div style="padding: 110px 50px">
       <router-view/>
     </div>
   </div>
@@ -26,7 +26,8 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  background-color: #eee;
+  background-color: #efefef;
+  min-width: 1000px;
 }
 
   a{
