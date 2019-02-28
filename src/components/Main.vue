@@ -20,22 +20,22 @@
 </template>
 
 <script>
-import Swiper from 'swiper'
-import 'swiper/dist/css/swiper.min.css'
+// import Swiper from 'swiper'
+// import 'swiper/dist/css/swiper.min.css'
 export default {
   name: 'Main',
   methods: {
   },
   mounted: () => {
-    var mySwiper = new Swiper('.swiper-container', {
-      loop: true,
-      // 如果需要前进后退按钮
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev'
-      }
-
-    })
+    // var mySwiper = new Swiper('.swiper-container', {
+    //   loop: true,
+    //   // 如果需要前进后退按钮
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev'
+    //   }
+    //
+    // })
   }
 }
 </script>
