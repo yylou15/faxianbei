@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <Myheader></Myheader>
-    <div style="padding: 110px 50px">
+    <div class="mainWrapper">
       <router-view/>
     </div>
   </div>
@@ -45,5 +45,8 @@ export default {
   }
   a:active{
     color: #4b72ff;
+  }
+  .mainWrapper{
+    padding: 110px 50px;
   }
 </style>

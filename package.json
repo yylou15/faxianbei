@@ -14,13 +14,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.15",
-    "@fortawesome/free-brands-svg-icons": "^5.7.2",
-    "@fortawesome/free-regular-svg-icons": "^5.7.2",
-    "@fortawesome/free-solid-svg-icons": "^5.7.2",
-    "@fortawesome/vue-fontawesome": "^0.1.5",
     "element-ui": "^2.5.4",
     "i": "^0.3.6",
+    "iview": "^3.2.2",
     "npm": "^6.8.0",
     "swiper": "^4.5.0",
     "vue": "^2.5.2",

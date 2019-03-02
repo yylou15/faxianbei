@@ -9,7 +9,7 @@
                 <p class="digest" @click="handleAsideClick(item.articleId)">{{item.digest}}</p>
                 <div class="origin">
                     <img :src="item.originAvatar" alt="来源" class="originImg">
-                    &nbsp;&nbsp;<span class="originText">新片场</span>
+                    &nbsp;&nbsp;<span class="originText">{{item.origin}}</span>
                 </div>
             </el-main>
         </el-container>

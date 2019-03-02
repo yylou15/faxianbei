@@ -1,13 +1,20 @@
 <template>
     <el-row class="head grid-content" style="border-bottom: solid 1px #e6e6e6;min-width: 1000px;background-color: white">
         <el-col :span="3">
-            <a href="/" style="display:block;margin-top: 4px"><img src="/static/img/new_logo.png" alt="LEO" style="width: 50px;" class="menu-logo"></a>
+            <a href="/" style="display:block;margin-top: 4px;padding-top: 5px"><img src="/static/img/new_logo.png" alt="LEO" style="width: 100px;height: 35px;" class="menu-logo"></a>
         </el-col>
         <el-col :span="10">
             <el-menu :default-active="activeIndex" router class="el-menu-demo menu" mode="horizontal">
-                <el-menu-item v-for="(item,i) in headMenu" :key="i" :index="item.route" style="width: 25%">
+                <el-menu-item v-for="(item,i) in headMenu" :key="i" v-if="!item.subtitle" :index="item.route" style="width: 25%">
                     {{item.caption}}
                 </el-menu-item>
+
+                <el-submenu v-for="(item,i) in headMenu" :key="i" v-if="item.subtitle" style="width: 25%" index="GetOneTrip">
+                    <template slot="title">{{item.caption}}</template>
+                    <el-menu-item v-for="(menuItem,index) in item.subtitle" :key="index"  :index="menuItem.route">
+                        {{menuItem.caption}}
+                    </el-menu-item>
+                </el-submenu>
             </el-menu>
         </el-col>
         <el-col :span="4" style="padding: auto;line-height: 60px">
@@ -48,7 +55,11 @@ export default {
         },
         {
           caption: '来一场旅行',
-          route: '/GetOneTrip'
+          subtitle: [
+            {caption: '旅行推荐', route: '/TripRecommendation'},
+            {caption: '旅游攻略', route: '/TripStrategy'},
+            {caption: '运动旅行', route: '/TripSport'}
+          ]
         },
         {
           caption: '旅行同行',
