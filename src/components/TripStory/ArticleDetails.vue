@@ -50,8 +50,8 @@
 </template>
 
 <script>
-import CommentItem from './CommentItem'
-import CommitComment from './CommitComment'
+import CommentItem from '../common/CommentItem'
+import CommitComment from '../common/CommitComment'
 export default {
   name: 'ArticleDetails',
   components: {
