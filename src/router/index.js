@@ -8,7 +8,8 @@ import GetOneTrip from '@/components/GetOneTrip/GetOneTrip'
 import TripColleague from '@/components/TripColleague/TripColleague'
 import Main from '@/components/Main'
 import ArticleDetails from '@/components/TripStory/ArticleDetails'
-import TripRecommendation from '@/components/GetOneTrip/TripRecommendation/TripRecommendation'
+import TripRecommendation from '@/components/GetOneTrip/SubMenu/TripRecommendation'
+import TripStrategy from '@/components/GetOneTrip/SubMenu/TripStrategy'
 
 Vue.use(Router)
 
@@ -37,6 +38,8 @@ export default new Router({
       path: '/TripStory/details/:aid', name: 'ArticleDetails', component: ArticleDetails
     }, {
       path: '/TripRecommendation', name: 'TripRecommendation', component: TripRecommendation
+    }, {
+      path: '/TripStrategy', name: 'TripStrategy', component: TripStrategy
     }
   ]
 })

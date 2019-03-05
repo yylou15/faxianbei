@@ -30,10 +30,10 @@
             </el-input>
         </el-col>
         <el-col :span="1" style="padding: 20px;">
-            <i class="el-icon-message menu-icon"></i>
+            <i class="el-icon-message menu-icon" @click="handleMessageClick"></i>
         </el-col>
         <el-col :span="1" style="padding: 20px;">
-            <i class="el-icon-bell menu-icon"></i>
+            <i class="el-icon-bell menu-icon" @click="handleNoticeClick"></i>
         </el-col>
     </el-row>
 </template>
@@ -75,6 +75,28 @@ export default {
   methods: {
     handleSelect (ent) {
 
+    },
+    handleMessageClick () {
+      this.$alert('暂无新消息', '未读消息', {
+        confirmButtonText: '确定',
+        callback: action => {
+          this.$message({
+            type: 'info',
+            message: `action: ${action}`
+          })
+        }
+      })
+    },
+    handleNoticeClick () {
+      this.$alert('暂无新提示', '提示', {
+        confirmButtonText: '确定',
+        callback: action => {
+          this.$message({
+            type: 'info',
+            message: `action: ${action}`
+          })
+        }
+      })
     }
   }
 
