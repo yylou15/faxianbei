@@ -22,7 +22,7 @@ export default new Router({
         {
           path: 'latest', name: 'latestTripVideo', component: latestTripVideo
         }, {
-          path: 'hot', name: 'hotTripVideo', component: hotTripVideo
+          path: 'hot/:time', name: 'hotTripVideo', component: hotTripVideo
         }
       ]
     }, {

@@ -1,29 +1,27 @@
 <template>
     <div>
-        <el-row class="wrapper" v-for="(item,index) in list"
-                :key="index" v-if="index >= (videoPage - 1) * 5 && index < (videoPage * 5)"
-                style="background: white;margin-top: 20px;margin-bottom: 20px" :gutter="20">
-            <el-col style="overflow: hidden;padding: 20px" :span="8">
+        <el-container class="wrapper hover-shadow" v-for="(item,index) in list" :key="index"
+                      v-if="index >= (videoPage-1) * 5 && index < (videoPage * 5)">
+            <el-aside width="373px" style="overflow: hidden;">
                 <img :src="item.postUrl" alt="封面图片" class="post">
-            </el-col>
-            <el-col :span="16">
-                <h3>{{item.caption}}</h3>
-                <p class="digest">{{item.digest}}</p>
-                <el-row class="video-bottom">
-                    <el-col :span="10">
-                        发布时间：{{ item.time | formatDate }}
-                    </el-col>
-                    <el-col :span="8" :offset="6">
-                        <font-awesome-icon icon="heart" style="color: #F596AA;"/>
-                        <span> {{ item.like }} </span>
-                        &nbsp;&nbsp;&nbsp;
-                        <font-awesome-icon icon="comments"/>
-                        <span> {{ item.comments }} </span>
-                    </el-col>
-                </el-row>
-            </el-col>
-        </el-row>
-        <el-row style="background-color: white;margin-top: 30px">
+            </el-aside>
+            <el-main class="main">
+                <span class="caption">{{item.caption}}{{index}}</span>
+                <p class="content">{{item.content}}</p>
+                <div class="publish">
+                        发布时间：{{ item.publishTime | formatDate }}
+                </div>
+                <div class="status">
+                    <font-awesome-icon icon="heart" style="color: #F596AA;"/>
+                    <span> {{ item.like }} </span>
+                    &nbsp;&nbsp;&nbsp;
+                    <font-awesome-icon icon="comments"/>
+                    <span> {{ item.comments }} </span>
+                </div>
+            </el-main>
+        </el-container>
+
+        <el-row style="background-color: white;margin-top: 30px;text-align: center">
             <el-col :span="24">
                 <el-pagination
                         :current-page.sync="videoPage"
@@ -46,34 +44,65 @@ export default {
       videoPage: 1
     }
   },
-  methods: {
-  },
+  methods: {},
   filters: {
     formatDate (timeStamp) {
       let date = new Date(timeStamp * 1000)
       return date.getFullYear() + '-' +
-        (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-' +
-        (date.getDate() < 10 ? '0' + (date.getDate()) : date.getDate())
+          (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-' +
+          (date.getDate() < 10 ? '0' + (date.getDate()) : date.getDate())
     }
   }
 }
 </script>
 
 <style scoped>
-
-    .digest {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 5;
-        -webkit-box-orient: vertical;
+    .wrapper {
+        height: 247px;
+        width: 1000px;
+        margin-top: 50px;
+        text-align: left;
     }
 
     .post {
-        width: auto;
-        height: auto;
-        min-height: 170px;
-        max-width: 100%;
-        max-height: 200px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .main {
+        background-color: white;
+        position: relative;
+    }
+
+    .caption {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .content {
+        color: #ccc;
+    }
+
+    .publish {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+    }
+
+    .status {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .hover-shadow {
+        transition: transform .3s ease-in-out, box-shadow .3s cubic-bezier(.47, 0, .745, .715), border .3s linear .1s;
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 10px 50px rgba(51, 51, 51, .25);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        transform: translateY(-10px)
     }
 </style>

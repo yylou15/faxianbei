@@ -47,6 +47,6 @@ export default {
     color: #4b72ff;
   }
   .mainWrapper{
-    padding: 110px 50px;
+    padding: 80px 50px;
   }
 </style>
