@@ -14,15 +14,22 @@ import { fas } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon, FontAwesomeLayers, FontAwesomeLayersText } from '@fortawesome/vue-fontawesome'
+// vue-video-player
+import VideoPlayer from 'vue-video-player'
 
 import 'iview/dist/styles/iview.css'
 Vue.config.productionTip = false
+
+require('video.js/dist/video-js.css')
+require('vue-video-player/src/custom-theme.css')
 
 // font awesome
 library.add(fas, far, fab)
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.component('font-awesome-layers', FontAwesomeLayers)
 Vue.component('font-awesome-layers-text', FontAwesomeLayersText)
+// vue-video-player
+Vue.use(VideoPlayer)
 
 Vue.use(ElementUI)
 Vue.use(VueRouter)

@@ -18,11 +18,13 @@
                 </el-submenu>
             </el-menu>
         </el-row>
-        <router-view></router-view>
+
+        <router-view/>
     </div>
 </template>
 
 <script>
+
 export default {
   name: 'index',
   data () {
@@ -38,13 +40,13 @@ export default {
         }
       ],
       activeSubIndex: this.$route.path
+
     }
   }
 }
 </script>
 
 <style scoped>
-
     .carousel-img {
         width: auto;
         height: auto;
@@ -53,4 +55,6 @@ export default {
         max-height: 100%;
         margin: 0 auto;
     }
+
+    .video-js .vjs-big-play-button{}
 </style>

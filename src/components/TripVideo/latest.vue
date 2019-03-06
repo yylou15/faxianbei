@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import VideoItem from './videoItem'
+import VideoItem from './videoList'
 export default {
   name: 'latest',
   components: {VideoItem},
