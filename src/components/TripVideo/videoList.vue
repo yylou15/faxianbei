@@ -3,13 +3,13 @@
         <el-container class="wrapper hover-shadow" v-for="(item,index) in list" :key="index"
                       v-if="index >= (videoPage-1) * 5 && index < (videoPage * 5)">
             <el-aside width="373px" style="overflow: hidden;">
-                <img :src="item.postUrl" alt="封面图片" class="post">
+                <img :src="item.postUrl" alt="封面图片" class="post" @click="openVideoDetail(item.videoId)">
             </el-aside>
             <el-main class="main">
-                <span class="caption">{{item.caption}}{{index}}</span>
-                <p class="content">{{item.content}}</p>
+                <span class="caption" @click="openVideoDetail(item.videoId)">{{item.caption}}{{index}}</span>
+                <p class="content" @click="openVideoDetail(item.videoId)">{{item.content}}</p>
                 <div class="publish">
-                        发布时间：{{ item.publishTime | formatDate }}
+                    发布时间：{{ item.publishTime | formatDate }}
                 </div>
                 <div class="status">
                     <font-awesome-icon icon="heart" style="color: #F596AA;"/>
@@ -44,7 +44,13 @@ export default {
       videoPage: 1
     }
   },
-  methods: {},
+  methods: {
+    openVideoDetail (id) {
+      console.log(id)
+      this.$router.push('/TripVideo/detail/' + id)
+      console.log(this.$route)
+    }
+  },
   filters: {
     formatDate (timeStamp) {
       let date = new Date(timeStamp * 1000)
@@ -93,6 +99,10 @@ export default {
         position: absolute;
         bottom: 20px;
         right: 20px;
+    }
+
+    .post, .caption, .content {
+        cursor: pointer;
     }
 
     .hover-shadow {
