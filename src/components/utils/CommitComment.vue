@@ -32,7 +32,8 @@ export default {
 
 <style scoped>
     .avatar {
-        width: 100%;height: 100%;border-radius: 50%;display: block;
+        width: 54px;height: 54px;border-radius: 50%;display: block;
+        margin: 0 auto;
         border: 2px solid cornflowerblue;
     }
 </style>
