@@ -17,7 +17,7 @@
             </el-row>
         </div>
         <div class="container-wrapper">
-            <NoteItem></NoteItem>
+            <NoteItem :list="noteCaptionList"></NoteItem>
         </div>
     </div>
 
@@ -33,7 +33,7 @@ export default {
       searchInput: '',
       noteCaptionList: [
         {
-          postUrl: 'file:///C:/Users/lou/Documents/Tencent%20Files/1207862938/FileRecv/%E7%95%8C%E9%9D%A2%E5%8E%9F%E5%9E%8B%EF%BC%88%E9%83%A8%E5%88%86%E4%BA%A4%E4%BA%92%EF%BC%89%E4%BF%AE%E8%AE%A22.28/images/%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5/u360.png',
+          postUrl: '/static/img/TripStrategy/post1.png',
           caption: '长沙',
           abstract: '这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要',
           time: '2019.02.13',
@@ -42,7 +42,7 @@ export default {
           noteId: 2
         },
         {
-          postUrl: 'file:///C:/Users/lou/Documents/Tencent%20Files/1207862938/FileRecv/%E7%95%8C%E9%9D%A2%E5%8E%9F%E5%9E%8B%EF%BC%88%E9%83%A8%E5%88%86%E4%BA%A4%E4%BA%92%EF%BC%89%E4%BF%AE%E8%AE%A22.28/images/%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5/u360.png',
+          postUrl: '/static/img/TripStrategy/post2.jpg',
           caption: '长沙',
           abstract: '这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要',
           time: '2019.02.13',
@@ -51,7 +51,7 @@ export default {
           noteId: 3
         },
         {
-          postUrl: 'file:///C:/Users/lou/Documents/Tencent%20Files/1207862938/FileRecv/%E7%95%8C%E9%9D%A2%E5%8E%9F%E5%9E%8B%EF%BC%88%E9%83%A8%E5%88%86%E4%BA%A4%E4%BA%92%EF%BC%89%E4%BF%AE%E8%AE%A22.28/images/%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5/u360.png',
+          postUrl: '/static/img/TripStrategy/post3.jpg',
           caption: '长沙',
           abstract: '这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要',
           time: '2019.02.13',
@@ -60,7 +60,7 @@ export default {
           noteId: 4
         },
         {
-          postUrl: 'file:///C:/Users/lou/Documents/Tencent%20Files/1207862938/FileRecv/%E7%95%8C%E9%9D%A2%E5%8E%9F%E5%9E%8B%EF%BC%88%E9%83%A8%E5%88%86%E4%BA%A4%E4%BA%92%EF%BC%89%E4%BF%AE%E8%AE%A22.28/images/%E6%97%85%E6%B8%B8%E6%94%BB%E7%95%A5/u360.png',
+          postUrl: '/static/img/TripStrategy/post3.jpg',
           caption: '长沙',
           abstract: '这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要这是摘要',
           time: '2019.02.13',
@@ -78,11 +78,12 @@ export default {
     .head-wrapper {
         width: 500px;
         margin: 0 auto;
+        padding: 100px 0;
     }
 
     .container-wrapper {
         width: 1000px;
-        margin: 100px auto;
+        margin: 30px auto;
         background: white;
         padding: 25px;
     }
