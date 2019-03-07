@@ -1,6 +1,6 @@
 <template>
     <div >
-        <el-container class="wrapper" v-for="(item,index) in list" :key="index" v-if="index >= (currentPage1-1) * 5 && index < (currentPage1 * 5)">
+        <el-container class="wrapper hover-shadow" v-for="(item,index) in list" :key="index" v-if="index >= (currentPage1-1) * 5 && index < (currentPage1 * 5)">
             <el-aside width="373px" style="overflow: hidden;">
                 <img :src="item.postUrl" alt="封面图片" class="post" @click="handleAsideClick(item.articleId)">
             </el-aside>
@@ -93,5 +93,16 @@ export default {
 }
 .post,.caption,.origin,.digest{
     cursor: pointer;
+}
+
+.hover-shadow {
+    transition: transform .3s ease-in-out, box-shadow .3s cubic-bezier(.47, 0, .745, .715), border .3s linear .1s;
+}
+
+.hover-shadow:hover {
+    box-shadow: 0 10px 50px rgba(51, 51, 51, .25);
+    -webkit-transform: translateY(-10px);
+    -moz-transform: translateY(-10px);
+    transform: translateY(-10px)
 }
 </style>
