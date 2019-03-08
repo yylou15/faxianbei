@@ -1,11 +1,11 @@
 <template>
     <div >
-        <el-container class="wrapper hover-shadow" v-for="(item,index) in list" :key="index" v-if="index >= (currentPage1-1) * 5 && index < (currentPage1 * 5)">
+        <el-container class="wrapper hover-shadow" v-for="(item,index) in list" :key="index" v-if="item.type === type">
             <el-aside width="373px" style="overflow: hidden;">
                 <img :src="item.postUrl" alt="封面图片" class="post" @click="handleAsideClick(item.articleId)">
             </el-aside>
             <el-main class="main">
-                <span class="caption" @click="handleAsideClick(item.articleId)">{{item.caption}}{{index}}</span>
+                <span class="caption" @click="handleAsideClick(item.articleId)">{{item.caption}}</span>
                 <p class="digest" @click="handleAsideClick(item.articleId)">{{item.digest}}</p>
                 <div class="origin">
                     <img :src="item.originAvatar" alt="来源" class="originImg">
@@ -32,7 +32,7 @@
 <script>
 export default {
   name: 'ArticleItem',
-  props: ['list'],
+  props: ['list', 'type'],
   data () {
     return {
       //    分页
@@ -67,11 +67,14 @@ export default {
 }
 
 .caption {
-    font-weight: bold;font-size: 1.2em;
+    font-weight: bold;font-size: 1.6em;
 }
 
 .digest {
     color: #ccc;
+    max-height: 150px;
+    overflow-y: hidden;
+    padding: 10px;
 }
 
 .origin {

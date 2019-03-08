@@ -44,13 +44,18 @@
         <el-tabs v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="热门旅行地" name="1">
                 <el-row>
-                    <el-col :span="6" v-for="(o, index) in 6" :key="o" :offset="index % 3 === 0 ? 0 : 2">
+                    <el-col :span="6" v-for="(item, index) in hotPlaces" :key="index" :offset="index % 3 === 0 ? 0 : 2">
                         <el-card :body-style="{ padding: '0px' }" class="card" shadow="hover">
                             <img src="/static/img/changsha.jpg" class="image">
                             <div style="padding: 14px;">
-                                <span>长沙</span>
+                                <span>{{item.caption}}</span>
+                                <br>
+                                <time class="time">出行时间：{{ item.timeStart }} 至 {{ item.timeEnd }}</time>
                                 <div class="bottom clearfix">
-                                    <time class="time">{{ currentDate }}</time>
+                                    <span v-for="i in item.tags" :key="i">
+                                        <el-tag type="warning">{{ i }}</el-tag>
+                                        &nbsp;&nbsp;
+                                    </span>
                                     <el-button type="text" class="button">查看详情</el-button>
                                 </div>
                             </div>
@@ -60,13 +65,18 @@
             </el-tab-pane>
             <el-tab-pane label="高品质旅行" name="2">
                 <el-row>
-                    <el-col :span="6" v-for="(o, index) in 3" :key="o" :offset="index % 3 === 0 ? 0 : 2">
-                        <el-card :body-style="{ padding: '0px' }" class="card"  shadow="hover">
+                    <el-col :span="6" v-for="(item, index) in hotPlaces" :key="index" :offset="index % 3 === 0 ? 0 : 2">
+                        <el-card :body-style="{ padding: '0px' }" class="card" shadow="hover">
                             <img src="/static/img/changsha.jpg" class="image">
                             <div style="padding: 14px;">
-                                <span>长沙</span>
+                                <span>{{item.caption}}</span>
+                                <br>
+                                <time class="time">出行时间：{{ item.timeStart }} 至 {{ item.timeEnd }}</time>
                                 <div class="bottom clearfix">
-                                    <time class="time">{{ currentDate }}</time>
+                                    <span v-for="i in item.tags" :key="i">
+                                        <el-tag type="warning">{{ i }}</el-tag>
+                                        &nbsp;&nbsp;
+                                    </span>
                                     <el-button type="text" class="button">查看详情</el-button>
                                 </div>
                             </div>
@@ -76,13 +86,18 @@
             </el-tab-pane>
             <el-tab-pane label="多人行" name="3">
                 <el-row>
-                    <el-col :span="6" v-for="(o, index) in 4" :key="o" :offset="index % 3 === 0 ? 0 : 2">
+                    <el-col :span="6" v-for="(item, index) in hotPlaces" :key="index" :offset="index % 3 === 0 ? 0 : 2">
                         <el-card :body-style="{ padding: '0px' }" class="card" shadow="hover">
                             <img src="/static/img/changsha.jpg" class="image">
                             <div style="padding: 14px;">
-                                <span>长沙</span>
+                                <span>{{item.caption}}</span>
+                                <br>
+                                <time class="time">出行时间：{{ item.timeStart }} 至 {{ item.timeEnd }}</time>
                                 <div class="bottom clearfix">
-                                    <time class="time">{{ currentDate }}</time>
+                                    <span v-for="i in item.tags" :key="i">
+                                        <el-tag type="warning">{{ i }}</el-tag>
+                                        &nbsp;&nbsp;
+                                    </span>
                                     <el-button type="text" class="button">查看详情</el-button>
                                 </div>
                             </div>
@@ -92,13 +107,18 @@
             </el-tab-pane>
             <el-tab-pane label="情侣行" name="4">
                 <el-row>
-                    <el-col :span="6" v-for="(o, index) in 5" :key="o" :offset="index % 3 === 0 ? 0 : 2">
+                    <el-col :span="6" v-for="(item, index) in hotPlaces" :key="index" :offset="index % 3 === 0 ? 0 : 2">
                         <el-card :body-style="{ padding: '0px' }" class="card" shadow="hover">
                             <img src="/static/img/changsha.jpg" class="image">
                             <div style="padding: 14px;">
-                                <span>长沙</span>
+                                <span>{{item.caption}}</span>
+                                <br>
+                                <time class="time">出行时间：{{ item.timeStart }} 至 {{ item.timeEnd }}</time>
                                 <div class="bottom clearfix">
-                                    <time class="time">{{ currentDate }}</time>
+                                    <span v-for="i in item.tags" :key="i">
+                                        <el-tag type="warning">{{ i }}</el-tag>
+                                        &nbsp;&nbsp;
+                                    </span>
                                     <el-button type="text" class="button">查看详情</el-button>
                                 </div>
                             </div>
@@ -131,8 +151,56 @@ export default {
       ],
 
       //    分页
-      activeName: '1'
+      activeName: '1',
 
+      //    热门旅行地
+      hotPlaces: [
+        {
+          id: 1,
+          caption: '长沙',
+          timeStart: '2018-05-05',
+          timeEnd: '2018-05-08',
+          tags: [
+            '美食', '烟花', '情侣行'
+          ]
+        },
+        {
+          id: 2,
+          caption: '长沙',
+          timeStart: '2018-05-05',
+          timeEnd: '2018-05-08',
+          tags: [
+            '美食', '烟花', '情侣行'
+          ]
+        },
+        {
+          id: 3,
+          caption: '长沙',
+          timeStart: '2018-05-05',
+          timeEnd: '2018-05-08',
+          tags: [
+            '美食', '烟花', '情侣行'
+          ]
+        },
+        {
+          id: 4,
+          caption: '长沙',
+          timeStart: '2018-05-05',
+          timeEnd: '2018-05-08',
+          tags: [
+            '美食', '烟花', '情侣行'
+          ]
+        },
+        {
+          id: 5,
+          caption: '长沙',
+          timeStart: '2018-05-05',
+          timeEnd: '2018-05-08',
+          tags: [
+            '美食', '烟花', '情侣行'
+          ]
+        }
+      ]
     }
   },
   computed: {

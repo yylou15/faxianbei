@@ -1,34 +1,39 @@
 <template>
-    <div class="container">
-        <el-row style="line-height: 40px;background-color: white;padding: 10px">
-            <el-col :span="3">
-                <el-dropdown trigger="click" @command="handleDropDownItemClick">
+    <div>
+        <div class="nav">
+            <img src="/static/img/TripStory/nav.png" alt="" width="100%" >
+        </div>
+        <div class="container">
+            <el-row style="line-height: 40px;background-color: white;padding: 10px">
+                <el-col :span="3">
+                    <el-dropdown trigger="click" @command="handleDropDownItemClick">
                     <span class="el-dropdown-link" style="cursor: pointer">
                         {{nowDropDownbButtonText}}
                         <i class="el-icon-arrow-down el-icon--right"></i>
                     </span>
-                    <el-dropdown-menu slot="dropdown">
-                        <el-dropdown-item v-for="(item,index) in DropDownbButtonItem" :key="index" :command="index">
-                            {{item.caption}}
-                        </el-dropdown-item>
-                    </el-dropdown-menu>
-                </el-dropdown>
-            </el-col>
-            <el-col :span="6" :offset="12">
-                <!--<el-button type="text">精选</el-button>-->
-                <!--&nbsp;/-->
-                <!--<el-button type="text">热门</el-button>-->
-                <el-radio v-model="radioOption" label="1" border size="medium" style="background-color: white">精选</el-radio>
-                <el-radio v-model="radioOption" label="2" border size="medium">热门</el-radio>
-            </el-col>
-            <el-col :span="3">
-                <el-button type="danger">
-                    <i class="el-icon-edit"></i>
-                    发布文章
-                </el-button>
-            </el-col>
-        </el-row>
-        <ArticleItem :list="articleList"></ArticleItem>
+                        <el-dropdown-menu slot="dropdown">
+                            <el-dropdown-item v-for="(item,index) in DropDownbButtonItem" :key="index" :command="index">
+                                {{item.caption}}
+                            </el-dropdown-item>
+                        </el-dropdown-menu>
+                    </el-dropdown>
+                </el-col>
+                <el-col :span="6" :offset="12">
+                    <!--<el-button type="text">精选</el-button>-->
+                    <!--&nbsp;/-->
+                    <!--<el-button type="text">热门</el-button>-->
+                    <el-radio v-model="radioOption" label="1" border size="medium" style="background-color: white">精选</el-radio>
+                    <el-radio v-model="radioOption" label="2" border size="medium">热门</el-radio>
+                </el-col>
+                <el-col :span="3">
+                    <el-button type="danger">
+                        <i class="el-icon-edit"></i>
+                        发布文章
+                    </el-button>
+                </el-col>
+            </el-row>
+            <ArticleItem :list="articleList" :type="radioOption === '1' ? '精选':'热门'"></ArticleItem>
+        </div>
     </div>
 </template>
 
@@ -58,141 +63,144 @@ export default {
       // 文章
       articleList: [
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/1.jpg',
+          caption: '请相信，这个世界上真的有人在过着你想要的生活',
+          digest: '北京时间九点三十分42秒，关上电脑，准备下班。手机里微信提示音在这时候响起，一个正在旅行途中的小伙伴发来的一条消息。说道：你说我也断断续续的旅行这么多年，但是这次旅行感觉不一样了。开始真正的去思考旅行的意义了，你说旅行会不会意义大于实际呢？此时此刻我的心情就是：我说姑娘，你对一个这个时间才准备下班的上班狗来讲旅行的意义真的好嘛？',
+          origin: '大冰',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
           //  文章id
           articleId: 1,
           //  类型：精选or热门
-          type: 'hot'
+          type: '热门'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/2.jpg',
+          caption: '你和世界只差一场又一场的旅行',
+          digest: '旅行的书大概可以分为两大类--攻略类和游记类。攻略就是旅行指南这类，有实用性。\n' +
+              '游记是个笼统的概述，记录一路的吃喝拉撒、图片集、感悟都可以归入此类。\n' +
+              'LP(孤独星球):这一系列的书就已足够，世界上各个国家、城市和专题都有分别对应的书。详尽的历史背景介绍，行程、设计，景点简介和推荐，吃喝玩乐交通一条龙的靠谱推荐。可谓一书在手，世界放心走。\n' +
+              'LP是著名的旅行“黄色圣经”--Lonely Planet的缩写。\n' +
+              'Lonely Planet诞生于一次一见钟情和一次跨越大陆的旅行。1970年10月，伦敦商学院的在读MBA托尼·惠勒和初到伦敦的爱尔兰女子莫琳在伦敦摄政公园的一张长椅上不期而遇，一见钟情的两个人在一年后结婚。这时托尼正好毕业，而为了暂时摆脱将要开始的“朝九晚五”的生活，新婚不久的托尼·惠勒和莫琳·惠勒夫妇离开伦敦开始了一次探险之旅。他们穿越欧亚大陆并在一年后抵达澳大利亚。到达澳大利亚之后，惠勒夫妇遇到很多想要自助旅行的人不断询问他们关于此次旅程的各种问题，最后他们决定出版一本旅行手册。\n' +
+              '女神三毛的《撒哈拉的故事》《万水千山走遍》。读三毛的书是一种享受，也算一趟心灵的旅行。就是无脑喜欢她的文字，简单、真诚、悲伤、又很倔强。就是喜欢她，不接受任何批评谢谢~\n',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 2,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '热门'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/3.jpg',
+          caption: '你们都说丽江不好，那是你们去的地方不对',
+          digest: '丽江确是一个被理想化了的地方——“疗伤”、“艳遇”、“人间天堂”。人们一听，来了！转身却遇上现实——小店清一色售卖义乌出品的旅游纪念物，车载CD老板打着非洲鼓唱着同一个丽江小倩，酒吧灯光流转连同寻欢作乐的人的眼波一起......\n' +
+              '\n' +
+              '丽江也许没让一些人满意，但也没有你们想的那么差。\n' +
+              ' \n' +
+              '陈坤发起的“行走的力量”公益活动，让大凉山“悬崖村”蜚声于世。而在距丽江城北110公里处的金沙江峡谷中，同样孤耸着一座人迹罕至的石头城。\n' +
+              ' \n' +
+              '在玉龙雪山的西部丛岭中，也有一个藏在深山高寒地带的村子——文海村。这里见不到任何破坏风景的单调乏味的混凝土建筑。晚春时节，杜鹃花漫山遍野地肆意撒泼，不成规矩、毫无章法，却比公园里的花来得更有生气。清明出发，说不定还能赶上匆匆一瞥。\n' +
+              '开启纳西族身份的“第二人生”\n' +
+              '\n' +
+              '丽江金茂古镇吧。金茂谷镇是由中国金茂倾力打造的　　大多数人来丽江，不过是以观光客的身份匆匆一瞥，而在丽江金茂古镇，你可以像个土生土长的纳西人一样，生活于此。\n',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 3,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '热门'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/4.jpg',
+          caption: '去看那片海',
+          digest: '认识的很多朋友都有大海情结，只要说去看海，都会无比雀跃。\n' +
+              ' \n' +
+              '我当然也不例外，喜欢海，喜欢它的无边无际，喜欢它的波澜不惊，喜欢它的浪涛汹涌，喜欢面对它发呆，喜欢......\n' +
+              '\n' +
+              '故事的开端往往是，“周末一起去活动，去不”，“那里有海看吗？那边的海好看吗......”如果得到的答案是肯定的，我就会屁颠屁颠地跟着去。\n' +
+              '\n' +
+              '收拾行李，打包，出发，带你去看那片海。\n' +
+              ' \n' +
+              '未达到目的地时，总会不停的问，还有多久。这颗心，乱跳不停，像初次约会时一样紧张。\n' +
+              '\n' +
+              '爬上山头，被眼前的景象惊呆了：远处，大海环绕着无数的小岛屿，岛屿在雾中若隐若现；近处，悬崖下海浪拍打着礁石，一弯蓝绿色的海水冲刷着峭壁下的沙滩，那沙滩像极了太阳的后裔里面男女主角到的那片沙滩，注视了许久，仿佛亲眼看见男女主角在那儿表演；悬崖的峭壁经过风浪常年的吹打，形成了风琴一样的形状。\n',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 4,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '热门'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/5.jpg',
+          caption: '想去做的时候，听从自己的内心',
+          digest: '闲逛喜洲之后，回到青旅，同住的青友骑行洱海也回来了，皮肤晒得红红的。虽然有些累，但我们还是决定去古城逛逛。走在大街上：琳琅满目的纪念品，各色的饮食小吃，一一映入眼帘。找个人少的地方坐下来歇息了一会儿，水渠、杨柳、石凳，刚好配这个景。\n' +
+              '再往前走，两个外国杂技友人在街上表演喷火。\n' +
+              '1 \n' +
+              '\n' +
+              '路过一户人家的时候，我很好奇里面的装饰，因为外面很别致。想进去，但是脚步一直在门外，正在犹豫去不去的时候，那位青友就说“想去做的时候就去做，听从心声”。于是我们走了进去，左看看，又看看，解开心底的好奇，就是一般的家庭客栈。\n' +
+              '又在街上逛了一会儿，街边一些人在摆摊儿卖明信片，青友说这就是我要去的地方：西藏。回到青旅的时候已经很晚，洗洗睡觉。\n' +
+              '第二天起了个早，同住的青友要去她的下一个目的地，我们就此别过。而在第二天开始的时候我又犹豫要不要去影视城，青旅的人都说别去，那儿没啥好玩的。最后，还是那位青友说“别人的评价未必客观，如果真的想去，还是去吧”。于是我一个人去了影视城，在路上遇上一个骑着自行车的男孩，一路的上坡路，与其说是骑车还不如说推着车上去的。我跟他打了声招呼，小伙子也真热情，于是我们俩就结伴而行。\n',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 5,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '热门'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/10.jpg',
+          caption: '20岁云南旅行路上',
+          digest: '在我看来，旅行之所以美好，是因为你能发现很多新奇的事物，结交更多有趣的朋友。去年到过大理几天，在古城的大街上逛了两天，开始觉得还蛮新鲜，时间长了就开始厌倦了。 于是就开始往古城的小巷子里面走，然后恰逢一场大雨来临，匆忙走进了一家很简约的咖啡店。很小很小的一家店，要不是因为这场雨，可能我根本就不会注意到这里居然有家咖啡店。店面很小，大概只有20来方，风格很简约，进到去也觉得蛮喜欢的。当时小店里只有老板娘一个人在。我跟朋友点了两杯咖啡之后，就跟老板娘聊了起来。聊天中得知：老板娘是一个浙江的姑娘，跟她老公旅行到大理，他们俩都很喜欢这边的生活，也就是传说中的春暖花开，面朝大海的生活。在大理的生活很慢，可能他们就是喜欢这种慢，所以在这里暂时定居于此。26岁左右的他们，在大理古城中开了这一家小小的咖啡店，远离了大城市，隐居于小巷子中。可能真的喜欢他们这种生活，我跟朋友一连两天都来到这家店跟老板聊天。后来得知老板是一位旅行作家，而我朋友一家三代都看过他的一本旅行著作。这世上，真的有缘分这一说，在无意之间的一场雨让一个书迷与作者偶遇在异乡。第三天我们也要离开大理了，我们之间互留了联系方式，又跟我们提出了很多关于在云南怎么玩怎么吃的很多建议。',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 6,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '精选'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/11.jpg',
+          caption: '畅游天地间，西北之行',
+          digest: '初中时，我的班主任告诉我们往外走你会看到不一样的世界，如果往里走，你看到的除了山还是山。外出求学的地方，是丘陵地带，这里看不到巍峨的高山，只有一个个被称之为山的“小土丘”。毕业后，来到南粤地带，在这里看得最多的是高楼大厦。去远处看看，一直是心中的梦想，于是这个梦想长大发芽，茁壮成长，直到2014年国庆的时候终于实现了这个梦想。看到了黄河之水、一望无际的平原、戈壁沙滩、还有沙漠，实现了很多的人生第一次。当火车驶入河南境地时，心中抑制不住的激动，因为我终于要看到平原地带了，在我的脑海里早已印下这样的画面：平原应该天很高很蓝，然后你可以看见无边无际的农作物在生长。但是我没有看到心中的景象，天不是想象中的很蓝而是空气中带有点浑浊，太阳也被遮住了，不过还是看到了平原，心中还是有点喜悦，一直一直注视着窗外的变化。我只是路过平原，这趟旅程的终点是祖国边疆内蒙额济纳。由于天空灰蒙蒙，照片效果不好，所以这里没有照片。',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 7,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '精选'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/12.jpg',
+          caption: '没有去旅行，那就在家看旅行绘本吧：15本有关旅行的绘本',
+          digest: '生命不仅有长度，也有深度与广度！如果说，看书是让一个人更有深度，那么旅行则会扩展一个人的生命宽度。　　对于孩子而言，旅行是走向另外一个世界的窗口，可以增长见识，加深对世界的认知与理解，有机会站在他人的角度看待世界。通过旅行，也许还可以燃起孩子探索世界的欲望和热情，从而帮助他们进一步进行学科知识的学习。　　如果没有机会出去旅行呢？那就在家通过书籍了解世界吧。问渠君推荐了15本与旅行有关的绘本，希望孩子们喜欢。 《花婆婆》　　花婆婆　　这本书是美国著名女作家芭芭拉•库尼以自己的生活经验为题材，自己写故事、自己画插图创作出的一本自传式图画书。她曾经说过《花婆婆》也许是最贴近她心的作品，也是她喜欢的代表作之一。因从书的封面到内页的文图设计，都可谓匠心独运，美不胜收。　　当鲁菲丝小姐成了一位风烛残年的老婆婆时，她告诉年轻的叙述者，许多年以前，当她还是一个名叫艾丽丝的小女孩的时候，她曾经答应过爷爷三件事：　　第一事是去很远的地方旅行，第二件事是住在海边，第三件事是做一件让世界变得更美丽的事。　　前两件事不难，难的是第三件事。直到有一年的春天，她喜出望外地发现山坡上开满了一大片蓝色、紫色和粉红色的鲁冰花时，她知道什么是她要做的第三件事了。整个夏天，她的口袋里都装满了花种子，她把它们撒在了乡间的小路边、教堂后面……　　作者|芭芭拉•库尼　　父亲是一位证券商，母亲是一位业余艺术家。是母亲引导她走上了画家之路，她长大成名以后，曾不断有人问她：“你是如何成为一位艺术家的？”　　她回答道：“我想这源自于我的家学，因为我的曾祖父是一位艺术家，他从德国移民到曼哈顿……我的母亲是一位油画与水彩画家，她不在意我弄乱她的画笔及画布，她教给我惟一的一件事就是洗干净我的画笔，她常常让我一个人画画。”　　在此后的近六十年里，她陆陆续续创作了一百多本图画书，是美国最伟大的图画书画家之一。她的主要作品还有获得了1959年凯迪克奖金奖的《金嗓子和狐狸》，获得1980年凯迪克奖金奖的《驾牛篷车的人》，蜚声海内外的《艾玛》、《篮子月亮》等多部。',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 8,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '精选'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/13.jpg',
+          caption: '沪沽湖别离',
+          digest: '曾经听过一句话“我的世界就那么大，有的人来了，就没有走，有的人来了又走了。”这颗心永远只能承载那点负荷。原以为本可以再相见，但原来的约定都附上厚厚的尘土，怕再次掀开，惹一身尘埃。泸沽湖的日子是静谧美好的，虽然我们以前从未相识，但机缘巧合我们一起走过了那段路。不论是游戏中的高兴，抑或爬山过程中的协助，再或烧烤时的兴奋，满满地承载着回不去的回忆。都说天秤座是慢热型的星座，都说天秤座能够很好的独善其身，而不知称子总希望有人理解，有人记得。大家似乎玩得很嗨，在这湖畔本地人基本上吃完晚饭就已经上床睡觉了，而我们仍然斗志昂扬，一起玩游戏。离别即将来临我们又将各奔东西，第二天的天亮得特别早，我们也起得很早，吃完早餐过后大家又一起下棋。棋艺不精的我老是败在一起来的小伙手上，除非他走错了，我就赢了。以前都是一个人的世界，发现出去之后别人都很健谈、很博广、很成熟。内心就喜欢这样的小伙：干净健谈乐于助人。可我们只是生命中的一个过客，在相遇之后本来就要分开，相遇之后注定要各奔东西。因为各自有各自的路要走，有各自的前程要赴。或许这只是一种欣赏，一种对男生地欣赏。即将离开泸沽湖了，还有点点遗憾，就是没有去环湖一圈、没有看到日出日落、没有......如果下次还去那儿，一定把这几个遗憾给补上。',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 9,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '精选'
         },
         {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
+          postUrl: '/static/img/TripStory/articlePost/6.jpg',
+          caption: '作为一个女生，我贪恋独自穷游的感觉',
+          digest: '前段时间非常迷恋戴荃的那首《悟空》，“踏碎凌霄、放肆桀骜”那呐喊的一句直接击中了我灵魂的最深处，那不羁的瞳孔，那狂热的自由。 没有什么能够阻挡，我对自由的向往。我想，穷游正是自由的象征，是春天一根狂傲的野草随风狂舞，是冬夜一朵热烈的玫瑰依雪醉卧。迄今，由于一直受资金的限制，去过的地方还未能长篇累牍，但每到一处风景却都是短小精悍。去过海风清冽的舟山，那个被仙气缭绕的嵊泗、武侠江湖里的桃花岛、韩寒笔下的后会无期的东极岛以及普陀山、朱家尖等等星罗棋布的小岛织就的小小东海一隅。  去过古朴浪漫的景德镇，半生瓷器拉胚，瓷都从此只能被仰望。那魔幻醉人的三宝村、那传颂千年的古窑、那星河相接的陶溪川，那烟雨平河的瑶里，那个以陶瓷著称却不仅仅只有陶瓷的文化瓷都。',
+          origin: '匿名',
           originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
+          //  文章id
           articleId: 10,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 11,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 12,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 13,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 14,
-          type: 'hot'
-        },
-        {
-          postUrl: 'http://5b0988e595225.cdn.sohucs.com/images/20171109/f3bedad065494847bc2db5ec17657061.jpeg',
-          caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
-          digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
-          origin: '新华社',
-          originAvatar: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1554278126,1318599153&fm=27&gp=0.jpg',
-          articleId: 15,
-          type: 'hot'
+          //  类型：精选or热门
+          type: '精选'
         }
       ]
     }
@@ -210,6 +218,13 @@ export default {
 <style scoped>
 .container{
     width: 1000px;
-    margin: 0 auto;
+    margin: 370px auto;
+}
+
+.nav {
+    position: absolute;
+    top: 62px;left: 0;
+    width: 100%;
+    height: 100px;
 }
 </style>

@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div class="bg">
+            <img src="/static/img/TripStrategy/nav.png" alt="" width="100%">
+        </div>
         <div class="head-wrapper">
             <h1>这里有你想要的旅行笔记</h1>
             <br><br>
@@ -77,14 +80,20 @@ export default {
 <style scoped>
     .head-wrapper {
         width: 500px;
-        margin: 0 auto;
+        margin: 200px auto;
         padding: 100px 0;
     }
 
     .container-wrapper {
         width: 1000px;
-        margin: 30px auto;
+        margin: -150px auto;
         background: white;
         padding: 25px;
+    }
+    .bg{
+        position: absolute;
+        width: 100%;
+        top: 62px;
+        left: 0;
     }
 </style>

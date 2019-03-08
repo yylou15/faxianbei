@@ -1,7 +1,7 @@
 <template>
-    <el-carousel trigger="click" height="100vh">
-        <el-carousel-item v-for="item in 3" :key="item">
-            <img src="/static/img/bg.jpg" alt="">
+    <el-carousel trigger="click" height="100vh" class="bg">
+        <el-carousel-item v-for="item in 5" :key="item">
+            <img :src="'/static/img/main/' + item + '.jpg'" alt="">
         </el-carousel-item>
     </el-carousel>
 </template>
@@ -11,6 +11,13 @@
 // import 'swiper/dist/css/swiper.min.css'
 export default {
   name: 'Main',
+  data () {
+    return {
+      bgList: [
+        '/static/img/'
+      ]
+    }
+  },
   methods: {
   },
   mounted: () => {
@@ -29,6 +36,12 @@ export default {
 
 <style scoped>
     img{
+        width: 100%;
+    }
+
+    .bg {
+        position: absolute;
+        top:0;left: 0;
         width: 100%;
     }
 </style>
