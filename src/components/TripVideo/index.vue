@@ -1,10 +1,16 @@
 <template>
     <div style="text-align: left;width: 1000px;margin: auto;">
-        <el-carousel :interval="4000" height="300px" style="width: 100%;text-align: center;padding-bottom: 20px">
-            <el-carousel-item v-for="(item, index) in carouselData" :key="index">
-                <img class="carousel-img" v-if="item.img" :src="item.img" alt="">
-            </el-carousel-item>
-        </el-carousel>
+        <div style="position: relative; width: 1000px; height: 300px;">
+            <img src="/static/img/bg_gray.jpg" alt="bg" style="width: 1000px; height: 300px;"/>
+            <div style="position: absolute; top: 65px;left: 0;
+            width: 1000px;text-align: center;font-size: 25px">
+                <p>在LEO</p>
+                <br/>
+                <p>发现身边的美景</p>
+                <br/>
+                <p>发现更大的世界</p>
+            </div>
+        </div>
         <el-row style="line-height: 40px;background-color: white;width: 1000px;margin: 0 auto">
             <el-menu :default-active="activeSubIndex" router class="el-menu-demo menu" mode="horizontal">
                 <el-menu-item index="/TripVideo/latest">
@@ -29,18 +35,7 @@ export default {
   name: 'index',
   data () {
     return {
-      msg: 'Video',
-      carouselData: [
-        {
-          img: 'http://54sh.csu.edu.cn/media/zhongguoteseshehuizhuyi_dAW1LU6.jpg'
-        }, {
-          img: 'http://54sh.csu.edu.cn/media/shuangyiliu_SHiwFoY.jpg'
-        }, {
-          img: 'http://54sh.csu.edu.cn/media/%E6%96%B0%E5%B9%B4%E9%9F%B3%E4%B9%90%E4%BC%9A.jpg'
-        }
-      ],
       activeSubIndex: this.$route.path
-
     }
   }
 }
