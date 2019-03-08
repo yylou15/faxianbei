@@ -3,7 +3,6 @@ import Router from 'vue-router'
 
 import TripStory from '@/components/TripStory/TripStory'
 import GetOneTrip from '@/components/GetOneTrip/GetOneTrip'
-import TripColleague from '@/components/TripColleague/TripColleague'
 import Main from '@/components/Main'
 import ArticleDetails from '@/components/TripStory/ArticleDetails'
 import TripRecommendation from '@/components/GetOneTrip/SubMenu/TripRecommendation'
@@ -14,7 +13,11 @@ import TripStrategyDetails from '@/components/GetOneTrip/SubMenu/TripStrategy/Tr
 import tripVideo from '@/components/TripVideo/index'
 import latestTripVideo from '@/components/TripVideo/latest'
 import hotTripVideo from '@/components/TripVideo/hot'
-import tripVideoDetail from '@/components/TripVideo/details'
+import tripVideoDetail from '@/components/TripVideo/videoDetails'
+
+// trip colleague
+import TripColleague from '@/components/TripColleague/TripColleague'
+import newTripColleague from '@/components/TripColleague/new'
 
 Vue.use(Router)
 
@@ -36,13 +39,15 @@ export default new Router({
     }, {
       path: '/TripStory', name: 'TripStory', component: TripStory
     }, {
+      path: '/TripStory/details/:aid', name: 'ArticleDetails', component: ArticleDetails
+    }, {
       path: '/GetOneTrip', name: 'GetOneTrip', component: GetOneTrip
     }, {
       path: '/TripColleague', name: 'TripColleague', component: TripColleague
     }, {
-      path: '/', name: 'Main', component: Main
+      path: '/TripColleague/new', name: 'newTripColleague', component: newTripColleague
     }, {
-      path: '/TripStory/details/:aid', name: 'ArticleDetails', component: ArticleDetails
+      path: '/', name: 'Main', component: Main
     }, {
       path: '/TripRecommendation', name: 'TripRecommendation', component: TripRecommendation
     }, {
