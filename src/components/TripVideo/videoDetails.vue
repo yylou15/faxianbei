@@ -25,15 +25,15 @@
                 <p style="font-size: 14px">{{videoDetail.introduction}}</p>
             </el-col>
         </el-row>
-        <!--<el-col style="text-align: left;padding: 20px;">-->
-            <!--<span>{{videoDetail.comments.length}}条评论</span>-->
-            <!--<el-tabs v-model="activeName">-->
-                <!--<el-tab-pane label="全部评论" name="allComment">-->
-                    <!--<CommitComment></CommitComment>-->
-                    <!--<CommentItem :list="videoDetail.comments"></CommentItem>-->
-                <!--</el-tab-pane>-->
-            <!--</el-tabs>-->
-        <!--</el-col>-->
+        <el-col style="text-align: left;padding: 20px;">
+            <span>{{videoDetail.comments.length}}条评论</span>
+            <el-tabs v-model="activeName">
+                <el-tab-pane label="全部评论" name="allComment">
+                    <CommitComment></CommitComment>
+                    <CommentItem :list="videoDetail.comments"></CommentItem>
+                </el-tab-pane>
+            </el-tabs>
+        </el-col>
     </div>
 
 </template>
@@ -146,4 +146,6 @@ export default {
         border: 2px solid royalblue;
         border-radius: 50%;
     }
+
+    .video-js .vjs-big-play-button{}
 </style>
