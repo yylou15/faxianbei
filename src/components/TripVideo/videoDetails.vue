@@ -1,5 +1,9 @@
 <template>
     <div style="text-align: left;width: 1000px;margin: auto;">
+        <br/>
+        <br/>
+        <h1>{{videoDetail.header}}</h1>
+
         <video-player class="video-player vjs-custom-skin" style="padding-top: 20px"
                       ref="videoPlayer"
                       :playsinline="true"
@@ -74,6 +78,7 @@ export default {
       },
       activeName: 'allComment',
       videoDetail: {
+        header: '一级标题',
         introduction: '视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍',
         like: '123',
         comments: [
