@@ -42,14 +42,4 @@ export default {
 </script>
 
 <style scoped>
-    .carousel-img {
-        width: auto;
-        height: auto;
-        min-height: 250px;
-        max-width: 100%;
-        max-height: 100%;
-        margin: 0 auto;
-    }
-
-    .video-js .vjs-big-play-button{}
 </style>
