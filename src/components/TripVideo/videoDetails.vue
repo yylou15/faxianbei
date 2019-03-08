@@ -1,6 +1,6 @@
 <template>
     <div style="text-align: left;width: 1000px;margin: auto;">
-        <video-player class="video-player vjs-custom-skin"
+        <video-player class="video-player vjs-custom-skin" style="padding-top: 20px"
                       ref="videoPlayer"
                       :playsinline="true"
                       :options="playerOptions"
@@ -9,25 +9,31 @@
             <el-col :span="12">
                 <div>
                     <font-awesome-icon icon="heart" style="color: #F596AA;"/>
-                    <span> 233333 </span>
+                    <span> {{videoDetail.like}} </span>
                 </div>
             </el-col>
             <el-col :span="12" style="text-align: right">
                 <div>
                     <font-awesome-icon icon="comments"/>
-                    <span> 234 </span>
+                    <span> {{videoDetail.comments.length}} </span>
                 </div>
             </el-col>
         </el-row>
-            <el-col style="text-align: left;padding: 20px;">
-                <span>{{videoDetail.comments.length}}条评论</span>
-                <el-tabs v-model="activeName">
-                    <el-tab-pane label="全部评论" name="allComment">
-                        <CommitComment></CommitComment>
-                        <CommentItem :list="videoDetail.comments"></CommentItem>
-                    </el-tab-pane>
-                </el-tabs>
+        <br/>
+        <el-row>
+            <el-col :span="20" :offset="2">
+                <p style="font-size: 14px">{{videoDetail.introduction}}</p>
             </el-col>
+        </el-row>
+        <!--<el-col style="text-align: left;padding: 20px;">-->
+            <!--<span>{{videoDetail.comments.length}}条评论</span>-->
+            <!--<el-tabs v-model="activeName">-->
+                <!--<el-tab-pane label="全部评论" name="allComment">-->
+                    <!--<CommitComment></CommitComment>-->
+                    <!--<CommentItem :list="videoDetail.comments"></CommentItem>-->
+                <!--</el-tab-pane>-->
+            <!--</el-tabs>-->
+        <!--</el-col>-->
     </div>
 
 </template>
@@ -37,7 +43,7 @@ import CommentItem from '../utils/CommentItem'
 import CommitComment from '../utils/CommitComment'
 
 export default {
-  name: 'details',
+  name: 'videoDetails',
   components: {
     CommentItem, CommitComment
   },
@@ -68,6 +74,8 @@ export default {
       },
       activeName: 'allComment',
       videoDetail: {
+        introduction: '视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍',
+        like: '123',
         comments: [
           {
             username: '用户名123',

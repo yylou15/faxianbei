@@ -1,5 +1,5 @@
 <template>
-    <el-row class="head grid-content" style="border-bottom: solid 1px #e6e6e6;min-width: 1000px;background-color: white">
+    <el-row class="head grid-content" style="height: 60px;border-bottom: solid 1px #e6e6e6;min-width: 1000px;width: 100%;float: left;background-color: white">
         <el-col :span="3">
             <a href="/" style="display:block;margin-top: 4px;padding-top: 5px"><img src="/static/img/new_logo.png" alt="LEO" style="width: 100px;height: 35px;" class="menu-logo"></a>
         </el-col>
