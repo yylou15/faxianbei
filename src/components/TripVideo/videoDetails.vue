@@ -122,6 +122,7 @@ export default {
     }).catch((response) => {
       console.log(response)
     })
+    scrollTo(0, 0)
   }
 }
 </script>

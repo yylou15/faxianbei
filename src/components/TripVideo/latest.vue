@@ -35,7 +35,7 @@ export default {
       //       'Dji Phantom 4 pro plus',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 2,
       //     postUrl: 'http://n3-q.mafengwo.net/s8/M00/F1/1E/wKgBpVWiLnaAC1-cAA21442UzLk18.jpeg?imageMogr2%2Fthumbnail%2F%211020x540r%2Fgravity%2FCenter%2Fcrop%2F%211020x540%2Fquality%2F100',
@@ -52,7 +52,7 @@ export default {
       //       '在这座小城里，有太多美妙之处，等着你去发现，所以还在等什么？',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 3,
       //     postUrl: 'http://pic6.wed114.cn/20161030/2016103017555568119899.jpg',
@@ -67,7 +67,7 @@ export default {
       //       '有所期待，人生的意义其实就在自己的心中。',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 4,
       //     postUrl: 'https://www.qqtouxiang.com/d/file/tupian/mx/20170802/ji2zltq21u5j3.jpg',
@@ -85,7 +85,7 @@ export default {
       //       '可倘若这遥远的、安静的岛屿就是我梦中的地方，如果我愿为之付出代价来换取这种生活，这同样是“做我自己”的勇气。',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 5,
       //     postUrl: 'http://up.bizhitupian.com/pic_source/b1/80/45/b18045dc59ab550dd335bf871888a646.jpg',
@@ -98,7 +98,7 @@ export default {
       //       '此外还利用航拍、延时、深潜等不同视角与拍摄手法，让影片内容更加饱满、富有生命力。让你看完就想背起行囊，探索世界。',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 6,
       //     postUrl: '/static/img/TripVideo/post6.png',
@@ -113,7 +113,7 @@ export default {
       //       '有点素材堆积的杂乱感，在时间线的划分上也给人不够自然灵动之意。',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 7,
       //     postUrl: 'http://file02.16sucai.com/d/file/2014/1017/c82642fc48a0223ae35b64c94c129981.jpg',
@@ -130,7 +130,7 @@ export default {
       //       '分别完成在2015年11、12月与2016年1月，共拍摄了80000张照片，在影片中使用了其中的25000张。',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 8,
       //     postUrl: '/static/img/TripVideo/post8.png',
@@ -145,7 +145,7 @@ export default {
       //       'Music:Time by Celsey McFadden',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 9,
       //     postUrl: 'http://up.bizhitupian.com/pic_source/06/02/95/0602952b773b2c9dcc0c764f0dde577a.jpg',
@@ -163,7 +163,7 @@ export default {
       //       '青春意味着无限的可能，所以在他们到达目的地之前，请包容年轻的心。',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }, {
       //     videoId: 10,
       //     postUrl: 'https://cs.vmovier.com/Uploads/static/wp/new/7/52dc98aeebee1.jpeg@600w_400h_1e_1c.jpg',
@@ -177,7 +177,7 @@ export default {
       //       '但文字有部分稍显平常，如果再雕琢一番效果会更好。',
       //     publishTime: 1551365405,
       //     like: 123,
-      //     comments: 234
+      //     comments: 6
       //   }
       // ]
 
