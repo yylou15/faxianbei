@@ -72,9 +72,10 @@ export default {
 
 .digest {
     color: #ccc;
-    max-height: 150px;
+    max-height: 120px;
     overflow-y: hidden;
     padding: 10px;
+    line-height: 2em;
 }
 
 .origin {
@@ -93,6 +94,7 @@ export default {
 
 .originText {
     color: #aaa;
+    line-height: 30px;
 }
 .post,.caption,.origin,.digest{
     cursor: pointer;

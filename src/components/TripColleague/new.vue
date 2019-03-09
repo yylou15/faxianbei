@@ -57,12 +57,12 @@ export default {
 </style>
 
 <style>
-    html, body, #app {
-        height: 100%;
-    }
+    /*html, body, #app {*/
+        /*height: 100%;*/
+    /*}*/
 
-    .mainWrapper {
-        height: 100%;
-        padding: 60px 0 0;
-    }
+    /*.mainWrapper {*/
+        /*height: 100%;*/
+        /*padding: 60px 0 0;*/
+    /*}*/
 </style>

@@ -8,6 +8,7 @@ import ArticleDetails from '@/components/TripStory/ArticleDetails'
 import TripRecommendation from '@/components/GetOneTrip/SubMenu/TripRecommendation'
 import TripStrategy from '@/components/GetOneTrip/SubMenu/TripStrategy'
 import TripStrategyDetails from '@/components/GetOneTrip/SubMenu/TripStrategy/TripStrategyDetails'
+import TripSport from '@/components/GetOneTrip/SubMenu/TripSport'
 
 // trip video
 import tripVideo from '@/components/TripVideo/index'
@@ -54,6 +55,8 @@ export default new Router({
       path: '/TripStrategy', name: 'TripStrategy', component: TripStrategy
     }, {
       path: '/TripStrategy/:id', name: 'TripStrategyDetails', component: TripStrategyDetails
+    }, {
+      path: '/TripSport', name: 'TripSport', component: TripSport
     }
   ]
 })

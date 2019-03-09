@@ -7,7 +7,7 @@
             </el-aside>
             <el-main class="main">
                 <span class="caption" @click="handleAsideClick(item.noteId)">{{item.caption}}{{index}}</span>
-                <p class="content" @click="handleAsideClick(item.noteId)">{{item.abstract}}</p>
+                <p class="content" @click="handleAsideClick(item.noteId)">{{item.digest}}</p>
                 <div class="publish" @click="handleAsideClick(item.noteId)">
                     发布时间：{{ item.time | formatDate }}
                 </div>
@@ -16,7 +16,7 @@
                     <span> {{ item.views }} </span>
                     &nbsp;&nbsp;&nbsp;
                     <font-awesome-icon icon="comments"/>
-                    <span> {{ item.comments }} </span>
+                    <span> {{ item.comments.length }} </span>
                 </div>
             </el-main>
         </el-container>
@@ -79,6 +79,10 @@ export default {
 
     .content {
         color: #ccc;
+        max-height: 120px;
+        overflow-y: hidden;
+        padding: 10px;
+        line-height: 2em;
     }
 
     .publish {

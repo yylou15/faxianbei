@@ -48,7 +48,7 @@
                         <el-card :body-style="{ padding: '0px' }" class="card" shadow="hover">
                             <img src="/static/img/changsha.jpg" class="image">
                             <div style="padding: 14px;">
-                                <span>{{item.caption}}</span>
+                                <span style="font-weight: bold;font-size: 1.5em">{{item.caption}}</span>
                                 <br>
                                 <time class="time">出行时间：{{ item.timeStart }} 至 {{ item.timeEnd }}</time>
                                 <div class="bottom clearfix">
@@ -234,6 +234,7 @@ export default {
     .button {
         padding: 0;
         float: right;
+        line-height: 28px;
     }
 
     .image {
