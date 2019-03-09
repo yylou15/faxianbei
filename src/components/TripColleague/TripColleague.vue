@@ -51,68 +51,75 @@ export default {
       colleaguePage: 1,
       colleagueDetail: [
         {
+          img: '/static/img/TripColleague/post1.jpg',
           age: 18,
-          school: '中南大学',
+          school: 'XX大学',
           destination: '北京',
           hobby: '吃',
           time: 1551967408
         }, {
+          img: '/static/img/TripColleague/post2.jpg',
           age: 18,
-          school: '中南大学',
+          school: 'XX大学',
           destination: '北京',
           hobby: '吃',
           time: 1551967408
         }, {
+          img: '/static/img/TripColleague/post3.jpg',
           age: 18,
-          school: '中南大学',
+          school: 'XX大学',
+          destination: '北京',
+          hobby: '吃',
+          time: 1551967408
+        },
+        {
+          img: '/static/img/TripColleague/post1.jpg',
+          age: 18,
+          school: 'XX大学',
           destination: '北京',
           hobby: '吃',
           time: 1551967408
         }, {
+          img: '/static/img/TripColleague/post2.jpg',
           age: 18,
-          school: '中南大学',
+          school: 'XX大学',
           destination: '北京',
           hobby: '吃',
           time: 1551967408
         }, {
+          img: '/static/img/TripColleague/post3.jpg',
           age: 18,
-          school: '中南大学',
+          school: 'XX大学',
+          destination: '北京',
+          hobby: '吃',
+          time: 1551967408
+        },
+        {
+          img: '/static/img/TripColleague/post1.jpg',
+          age: 18,
+          school: 'XX大学',
           destination: '北京',
           hobby: '吃',
           time: 1551967408
         }, {
+          img: '/static/img/TripColleague/post2.jpg',
           age: 18,
-          school: '中南大学',
+          school: 'XX大学',
           destination: '北京',
           hobby: '吃',
           time: 1551967408
         }, {
+          img: '/static/img/TripColleague/post3.jpg',
           age: 18,
-          school: '中南大学',
+          school: 'XX大学',
           destination: '北京',
           hobby: '吃',
           time: 1551967408
-        }, {
+        },
+        {
+          img: '/static/img/TripColleague/post1.jpg',
           age: 18,
-          school: '中南大学',
-          destination: '北京',
-          hobby: '吃',
-          time: 1551967408
-        }, {
-          age: 18,
-          school: '中南大学',
-          destination: '北京',
-          hobby: '吃',
-          time: 1551967408
-        }, {
-          age: 18,
-          school: '中南大学',
-          destination: '北京',
-          hobby: '吃',
-          time: 1551967408
-        }, {
-          age: 18,
-          school: '中南大学',
+          school: 'XX大学',
           destination: '北京',
           hobby: '吃',
           time: 1551967408

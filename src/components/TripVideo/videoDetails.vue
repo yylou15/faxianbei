@@ -1,5 +1,9 @@
 <template>
     <div style="text-align: left;width: 1000px;margin: auto;">
+        <br/>
+        <br/>
+        <h1>{{videoDetail.header}}</h1>
+
         <video-player class="video-player vjs-custom-skin" style="padding-top: 20px"
                       ref="videoPlayer"
                       :playsinline="true"
@@ -25,15 +29,15 @@
                 <p style="font-size: 14px">{{videoDetail.introduction}}</p>
             </el-col>
         </el-row>
-        <!--<el-col style="text-align: left;padding: 20px;">-->
-            <!--<span>{{videoDetail.comments.length}}条评论</span>-->
-            <!--<el-tabs v-model="activeName">-->
-                <!--<el-tab-pane label="全部评论" name="allComment">-->
-                    <!--<CommitComment></CommitComment>-->
-                    <!--<CommentItem :list="videoDetail.comments"></CommentItem>-->
-                <!--</el-tab-pane>-->
-            <!--</el-tabs>-->
-        <!--</el-col>-->
+        <el-col style="text-align: left;padding: 20px;">
+            <span>{{videoDetail.comments.length}}条评论</span>
+            <el-tabs v-model="activeName">
+                <el-tab-pane label="全部评论" name="allComment">
+                    <CommitComment></CommitComment>
+                    <CommentItem :list="videoDetail.comments"></CommentItem>
+                </el-tab-pane>
+            </el-tabs>
+        </el-col>
     </div>
 
 </template>
@@ -74,6 +78,7 @@ export default {
       },
       activeName: 'allComment',
       videoDetail: {
+        header: '一级标题',
         introduction: '视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍',
         like: '123',
         comments: [
@@ -146,4 +151,6 @@ export default {
         border: 2px solid royalblue;
         border-radius: 50%;
     }
+
+    .video-js .vjs-big-play-button{}
 </style>

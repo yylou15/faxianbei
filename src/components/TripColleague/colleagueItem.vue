@@ -1,7 +1,7 @@
 <template>
     <el-col :span="8" style="text-align: center;padding: 20px">
         <div style="width: 300px;margin: auto" class="info hover-shadow">
-            <img src="/static/img/bg1.jpg" alt="picture"
+            <img :src="info.img" alt="picture"
                  style="max-width: 250px;max-height: 200px;padding-top: 20px;">
             <br/>
             <br/>
