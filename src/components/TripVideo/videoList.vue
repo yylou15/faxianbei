@@ -6,8 +6,10 @@
                 <img :src="item.postUrl" alt="封面图片" class="post" @click="openVideoDetail(item.videoId)">
             </el-aside>
             <el-main class="main">
-                <span class="caption" @click="openVideoDetail(item.videoId)">{{item.caption}}{{index}}</span>
-                <p class="content" @click="openVideoDetail(item.videoId)">{{item.content}}</p>
+                <span class="caption" @click="openVideoDetail(item.videoId)">{{item.caption}}</span>
+                <br/>
+                <br/>
+                <p class="content" @click="openVideoDetail(item.videoId)" v-html="item.content"></p>
                 <div class="publish">
                     发布时间：{{ item.publishTime | formatDate }}
                 </div>
@@ -87,6 +89,10 @@ export default {
 
     .content {
         color: #ccc;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 6;
+        overflow: hidden;
     }
 
     .publish {

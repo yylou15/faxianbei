@@ -58,7 +58,7 @@ export default {
       // 文章
       articleList: [
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -69,7 +69,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -78,7 +78,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -87,7 +87,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -96,7 +96,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -105,7 +105,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -114,7 +114,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -123,7 +123,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -132,7 +132,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -141,7 +141,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -150,7 +150,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -159,7 +159,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -168,7 +168,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -177,7 +177,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',
@@ -186,7 +186,7 @@ export default {
           type: 'hot'
         },
         {
-          postUrl: '/static/img/TripVideo/post.jpg',
+          postUrl: '/static/img/post.jpg',
           caption: '专访韩寒，看电影也好写小说也罢，至少都能做到不辜负',
           digest: '独家专访视频请拖至文章中部观看昨天，刚刚去看了韩寒的新电影《飞驰人生》，看完后的感觉，就像韩寒自己以前说的，每一件事，拍电影也好写小说也罢。至少都能做到不辜负...',
           origin: '新华社',

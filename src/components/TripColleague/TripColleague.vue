@@ -1,8 +1,8 @@
 <template>
     <div style="text-align: left;width: 1000px;margin: auto;">
-        <div style="position: relative; width: 1000px; height: 400px;">
-            <img src="/static/img/bg_gray.jpg" alt="bg" style="width: 1000px; height: 400px;"/>
-            <div style="position: absolute; top: 145px;left: 0;
+        <div style="position: relative; width: 1000px; height: 300px;">
+            <img src="/static/img/bg_gray.jpg" alt="bg" style="width: 1000px; height: 300px;"/>
+            <div style="position: absolute; top: 100px;left: 0;
             width: 1000px;text-align: center;font-size: 25px">
                 <p>是不是曾经因为自己一个人，放弃了一次旅行？</p>
                 <br/>
@@ -17,7 +17,6 @@
                 </router-link>
             </el-col>
         </el-row>
-        <br/>
         <el-row :gutter="20">
             <colleague-item :info="item" v-for="(item,index) in colleagueDetail" :key="index"
                             v-if="index >= (colleaguePage - 1) * 6 && index < (colleaguePage * 6)"
