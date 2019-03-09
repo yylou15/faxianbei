@@ -44,7 +44,7 @@
         <el-tabs v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="热门旅行地" name="1">
                 <el-row>
-                    <el-col :span="6" v-for="(item, index) in hotPlaces" :key="index" :offset="index % 3 === 0 ? 0 : 2">
+                    <el-col :span="6" v-for="(item, index) in hotPlaces" :key="index" :offset="index % 3 === 0 ? 1 : 2">
                         <el-card :body-style="{ padding: '0px' }" class="card" shadow="hover">
                             <img src="/static/img/changsha.jpg" class="image">
                             <div style="padding: 14px;">

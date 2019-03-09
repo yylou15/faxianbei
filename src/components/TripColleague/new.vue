@@ -22,13 +22,3 @@ export default {
         background-size: 100% 100%;
     }
 </style>
-
-<style>
-    html, body, #app {
-        height: 100%;
-    }
-    .mainWrapper {
-        height: 100%;
-        padding: 60px 0 0;
-    }
-</style>
