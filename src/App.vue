@@ -19,7 +19,18 @@ export default {
   body{
     margin: 0;
   }
-#app {
+
+  html, body, #app, .mainWrapper {
+    color: #2c3e50;
+    background-color: #efefef;
+    height: auto;
+  }
+
+  .mainWrapper>div {
+    padding-bottom: 60px;
+  }
+
+  #app {
   margin: 0;
   font-family: 'AvenirTripVideo', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

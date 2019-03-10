@@ -5,11 +5,13 @@
                  style="max-width: 250px;max-height: 200px;padding-top: 20px;">
             <br/>
             <br/>
-            <h2>年龄&nbsp;&nbsp;：{{info.age}}</h2>
-            <h2>在读院校：{{info.school}}</h2>
-            <h2>旅游地点：{{info.destination}}</h2>
-            <h2>兴趣爱好：{{info.hobby}}</h2>
-            <h2>旅行时间：{{info.time | formatDate}}</h2>
+            <div style="text-align: left;padding-left: 40px">
+                <h2>&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;龄&nbsp;&nbsp;：{{info.age}}</h2>
+                <h2>在读院校：{{info.school}}</h2>
+                <h2>旅游地点：{{info.destination}}</h2>
+                <h2>兴趣爱好：{{info.hobby}}</h2>
+                <h2>旅行时间：{{info.time | formatDate}}</h2>
+            </div>
             <br/>
             <h2>用户寄语 <i class="el-icon-edit"></i></h2>
             <br/>

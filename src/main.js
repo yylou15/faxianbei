@@ -7,6 +7,8 @@ import ElementUI from 'element-ui'
 import iview from 'iview'
 import 'element-ui/lib/theme-chalk/index.css'
 import VueRouter from 'vue-router'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
 // font awesome
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -34,6 +36,7 @@ Vue.use(VideoPlayer)
 Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(iview)
+Vue.use(VueAxios, axios)
 
 /* eslint-disable no-new */
 new Vue({
