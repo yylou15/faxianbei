@@ -107,6 +107,6 @@
 
     .mainWrapper {
         height: 100%;
-        padding: 60px 0 0;
+        /*padding: 60px 0 0;*/
     }
 </style>
